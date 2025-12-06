@@ -116,3 +116,60 @@ li {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
     border-radius: 10px;
 }
+
+/* Responsive Design */
+
+/* Global box-sizing for better sizing control */
+* {
+    box-sizing: border-box;
+}
+
+/* Tablet styles */
+@media screen and (max-width: 768px) {
+    textarea {
+        width: 90%;
+    }
+
+    li {
+        width: 90%;
+    }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em; /* Smaller title */
+    }
+
+    textarea {
+        width: 100%;
+        font-size: 16px; /* Prevent zooming on iOS */
+    }
+
+    li {
+        width: 100%;
+        padding: 5px;
+    }
+
+    /* Stack buttons on mobile */
+    button {
+        width: 100%;
+        margin: 5px 0;
+        padding: 15px; /* Larger touch target */
+        font-size: 18px;
+    }
+
+    /* Adjust controls container if needed */
+    .controls {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Since some buttons are direct children of body, they will take 100% width due to the button rule above.
+       The margin will separate them. */
+}
