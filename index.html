@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Goofy Speech Pad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <marquee scrollamount="15" direction="left" behavior="alternate">
+        <h1>🤪 My Goofy Ahh Speech App 🤪</h1>
+    </marquee>
+
+    <div class="controls">
+      <button id="start-btn" onclick="startRecording()">Start Listening</button>
+      <button id="stop-btn" onclick="stopRecording()">Stop Listening</button>
+    </div>
+
+    <p>Status: <span id="status-text">Not listening...</span></p>
+
+    <textarea
+      id="my-text-area"
+      placeholder="Speak and text will appear here..."
+    ></textarea>
+
+    <br>
+    <button id="save-btn" onclick="saveNote()">Save Note</button>
+    <button id="copy-btn" onclick="copyToClipboard()" style="background-color: #9c27b0;">Copy Text</button>
+    <button id="clear-btn" onclick="clearAllNotes()" style="background-color: #555;">Clear All Notes</button>
+
+    <!-- Easter Egg Container -->
+    <div id="easter-egg">
+        <div class="tenor-gif-embed" data-postid="8575841764206736991" data-share-method="host" data-aspect-ratio="0.935743" data-width="50%"><a href="https://tenor.com/view/67-gif-8575841764206736991">67 GIF</a>from <a href="https://tenor.com/search/67-gifs">67 GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    </div>
+
+    <h2>Saved Notes</h2>
+    <ul id="notes-list">
+      <!-- Notes will go here -->
+    </ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color: #6a0dad; /* Deep purple base */
+    /* Tiling Moyai emoji background */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Ctext x='50%25' y='50%25' font-size='40' text-anchor='middle' dy='.35em'%3E🗿%3C/text%3E%3C/svg%3E");
+    background-size: 80px 80px;
+    animation: scrollBg 20s linear infinite;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 0 #000;
+}
+
+@keyframes scrollBg {
+    0% { background-position: 0 0; }
+    100% { background-position: 80px 80px; }
+}
+
+h1 {
+  color: #333;
+}
+
+.controls {
+  margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: 3px solid black; /* Thicc border */
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px; /* Wonky border */
+    margin: 5px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 5px 5px 0px 0px #000000;
+}
+
+button:active {
+    transform: scale(0.9) rotate(-5deg);
+}
+
+#stop-btn {
+  background-color: #f44336; /* Red */
+}
+
+#save-btn {
+  background-color: #008cba; /* Blue */
+  margin-top: 10px;
+}
+
+textarea {
+    width: 80%;
+    height: 150px;
+    padding: 10px;
+    font-size: 18px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    background-color: #222; /* Dark background */
+    color: #0f0; /* Hacker green text */
+    font-family: "Courier New", Courier, monospace;
+}
+
+.note-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.delete-btn {
+    background-color: #b71c1c; /* Darker red */
+}
+
+.edit-btn {
+    background-color: #e65100; /* Darker orange */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #333; /* Dark list items */
+    color: #fff;
+    margin: 5px auto;
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #000;
+    text-align: left;
+    border-radius: 5px;
+}
+
+#easter-egg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.tenor-gif-embed {
+    max-height: 90vh;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
